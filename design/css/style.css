@@ -1,3 +1,13 @@
+/** Start Global */
+
+.unstiled {
+  list-style: none;
+}
+
+
+/* End Global */
+
+
 /** Start Custom Input File */
 
 
@@ -17,3 +27,144 @@
 
 
 /* End Form customize */
+
+
+/* Start Galery */
+
+.galery {
+  margin: auto;
+  border:1px solid #EEE;
+  padding: 5px;
+}
+.galery img {
+  max-width: 100%;
+}
+.galery .showed-img {
+  position: relative;
+}
+.galery .showed-img .arrow {
+  display: block;
+  padding: 15px;
+  position: absolute;
+  line-height: 442px;
+  width: 50px;
+  top: 0;
+  z-index: 3;
+  height: 99%;
+  background: 0;
+  opacity: .4;
+}
+.galery .showed-img .arrow .arrow-left,
+.galery .showed-img .arrow .arrow-right {
+  width:11.31px;
+  height: 11.31px;
+  border-color: #FFF;
+  border-width:4px;
+}
+.galery .showed-img .arrow:first-child {
+  left:-56px
+}
+.galery .showed-img .arrow:last-of-type {
+  right: -56px;
+}
+.galery .thumbnails {
+  width:100%;
+  overflow: hidden;
+}
+.galery .thumbnails img {
+  float: left;
+  border:2px solid #616161;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-opacity:0.8;
+  -moz-opacity:0.8;
+  -o-opacity:0.8;
+  opacity:0.8;
+}
+.galery .thumbnails img.selected {
+  border-color:#4a48ad;   
+  -webkit-opacity:1;
+  -moz-opacity:1;
+  -o-opacity:1;
+  opacity:1;
+}
+/* End Galery */
+
+/* Start Review */
+
+
+.reviews{
+  padding: 15px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.review-item{
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 5px #343a40;
+}
+
+.review-item .review-date{
+  color: #cecece;
+}
+.review-item .review-text{
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #343a40;
+}
+
+.review-item .reviewer{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #cecece;
+}
+
+/****Rating Stars***/
+.raterater-bg-layer {
+    color: rgba( 0, 0, 0, 0.25 );
+}
+.raterater-hover-layer {
+    color: rgba( 255, 255, 0, 0.75 );
+}
+.raterater-hover-layer.rated { /* after the user selects a rating */
+    color: rgba( 255, 255, 0, 1 );
+}
+.raterater-rating-layer {
+    color: rgba( 255, 155, 0, 0.75 );
+}
+.raterater-outline-layer {
+    color: rgba( 0, 0, 0, 0.25 );
+}
+
+/* don't change these - you might break something.. */
+.raterater-wrapper {
+    overflow:visible;
+}
+
+.software .raterater-wrapper {
+    margin-top: 4px;
+}
+
+.raterater-layer,
+.raterater-layer i {
+    display: block;
+    position: absolute;
+    overflow: visible;
+    top: 0px;
+    left: 0px;
+}
+.raterater-hover-layer {
+    display: none;
+}
+.raterater-hover-layer i,
+.raterater-rating-layer i {
+    width: 0px;
+    overflow: hidden;
+}
+/* End Review */
