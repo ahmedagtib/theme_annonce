@@ -376,7 +376,12 @@ footer .section-title {
    
   }
   .contact .col-md-4{
-    background: #ff9b00;
+    /*background: #ff9b00;*/
+    background-image: url(./../image/smart.jpg);
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center;
+    background-repeat: no-repeat;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -413,7 +418,10 @@ footer .section-title {
 /*  end contact page */
 /*  strat Register page */
  .Register .col-md-4{
-    background: #ff9b00;
+     background-image: url(./../image/smart.jpg);
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -440,3 +448,23 @@ footer .section-title {
 }
 
 /*  end Register page */
+/* start image */
+
+.img-contact{
+-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 81% 78%, 19% 79%, 0 100%, 0 0);
+-moz-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 81% 78%, 19% 79%, 0 100%, 0 0);
+-o-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 81% 78%, 19% 79%, 0 100%, 0 0);
+-ms-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 81% 78%, 19% 79%, 0 100%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 100%, 81% 78%, 19% 79%, 0 100%, 0 0);
+overflow: hidden;
+}
+.img-contact img{
+  transition: .6s;
+  transform: scale3d(1,1,1);
+}
+.img-contact img:hover{
+  transition: .6s;
+  transform: scale3d(1.1,1.1,1);
+}
+
+/*end image */ 
